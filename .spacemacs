@@ -29,24 +29,26 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     ;; auto-completion
-     ;; better-defaults
+     auto-completion
+     better-defaults
      emacs-lisp
      git
      markdown
      python
      org
      ranger
-     ;; (shell :variables
-     ;;         shell-default-height 30
-     ;;         shell-default-position 'bottom)
+     (shell :variables
+             shell-default-height 30
+             shell-default-position 'bottom)
      spell-checking
      syntax-checking
      ;; version-control
-     (colors :variables colors-enable-nyan-cat-progress-bar t)
      dash
      javascript
-     swift
+     ;; swift
+     html
+     ;; osx
+     (colors :variables colors-enable-nyan-cat-progress-bar t)
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -200,7 +202,7 @@ values."
    ;; If non nil the frame is maximized when Emacs starts up.
    ;; Takes effect only if `dotspacemacs-fullscreen-at-startup' is nil.
    ;; (default nil) (Emacs 24.4+ only)
-   dotspacemacs-maximized-at-startup nil
+   dotspacemacs-maximized-at-startup t
    ;; A value from the range (0..100), in increasing opacity, which describes
    ;; the transparency level of a frame when it's active or selected.
    ;; Transparency can be toggled through `toggle-transparency'. (default 90)
@@ -261,8 +263,9 @@ layers configuration. You are free to put any user code."
                            ("gnu"   . "http://elpa.zilongshanren.com/gnu/")))
 
   (global-linum-mode t)
-  (tool-bar-mode -1)
+  ;; (tool-bar-mode  -1)
   (menu-bar-mode t)
+  (setq powerline-default-separator 'bar ) 
 
   ;;C-e to jump to end  
   (setcdr evil-insert-state-map nil)
@@ -284,6 +287,10 @@ layers configuration. You are free to put any user code."
     (define-key company-active-map (kbd "M-p") nil)
     (define-key company-active-map (kbd "C-n") #'company-select-next)
     (define-key company-active-map (kbd "C-p") #'company-select-previous))
+
+  ;; (global-set-key (kbd "C-c w") 'toggle-frame-fullscreen)
+
+  
 )
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
@@ -292,7 +299,8 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(paradox-github-token t))
+ '(paradox-github-token t)
+ '(powerline-default-separator (quote arrow)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
