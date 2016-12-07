@@ -12,3 +12,15 @@ C-x C-b     ;;查看所有buffer，选择进入
  - 用 C-c C-c 提交就可以快速修改文件名.
  - C-c ESC 是取消改名，C-x C-q 来提示是否改名.
  - 或者 %R 来用正则表达式批量改名.
+
+** Org Mode 
+*** 各种字体
+1 *粗体* , /斜体/ +删除线+ _下划线_  下标:H_2 O , 上标 E = mc^2 \\
+2 等宽字: =git= , ~git~ \\ 
+3 反双斜杠为换行
+#+BEGIN_EXAMPLE
+\\ 反双斜杠为换行
+#+END_EXAMPLE
+*** org mode 文档转换输出 
+    1. C-c, C-e 后出现相关菜单.按需求执行,可生成相关格式文档 *html*, *markdown* .
+    2. 如未见看MarkDown选项,M-x, 然后输入:org-md-export-to-markdown.
