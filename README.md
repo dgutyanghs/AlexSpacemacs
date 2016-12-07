@@ -44,7 +44,13 @@
 ### 各种字体<a id="orgheadline4"></a>
 
 1 **粗体** , *斜体* <del>删除线</del> <span class="underline">下划线</span>  下标:H<sub>2</sub> O , 上标 E = mc<sup>2</sup>   
+
+    *粗体* , /斜体/ +删除线+ _下划线_  下标:H_2 O , 上标 E = mc^2
+
 2 等宽字: `git` , `git`   
+
+    =git= 或 ~git~
+
 3 反双斜杠为换行
 
     \\ 反双斜杠为换行
