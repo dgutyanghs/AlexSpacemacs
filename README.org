@@ -31,3 +31,10 @@ C-x C-b     ;;查看所有buffer，选择进入
     1. C-c, C-e 后出现相关菜单.按需求执行,可生成相关格式文档 *html*, *markdown* .
     2. 如未见看MarkDown选项,M-x, 然后输入:org-md-export-to-markdown.
        
+** 修改.spacemacs的目录位置 
+因为多台电脑用到.spacemacs, 为共享它，我将它用github管理。
+#+BEGIN_SRC Bash
+$ln -s src/spacemacs_alex  ~/.spacemacs
+
+#+END_SRC
+src为存放configure文件夹，我将配置文件命名为：spacemacs_alex.
