@@ -38,3 +38,5 @@ $ln -s src/spacemacs_alex  ~/.spacemacs
 
 #+END_SRC
 src为存放configure文件夹，我将配置文件命名为：spacemacs_alex.
+** AG search 
+"C-c k"打开AG ,输入 keyword 全工程搜索.

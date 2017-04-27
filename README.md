@@ -2,38 +2,39 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org89ac8c8">1. spacemacs 学习笔记</a>
+<li><a href="#org820b3cd">1. spacemacs 学习笔记</a>
 <ul>
-<li><a href="#org4844bdc">1.1. Dired Mode</a>
+<li><a href="#orgb56c5c1">1.1. Dired Mode</a>
 <ul>
-<li><a href="#orgd83aeb6">1.1.1. 退出命令</a></li>
-<li><a href="#orgf4792a0">1.1.2. 进入文件修改模式</a></li>
+<li><a href="#orgde01cde">1.1.1. 退出命令</a></li>
+<li><a href="#org51c08ec">1.1.2. 进入文件修改模式</a></li>
 </ul>
 </li>
-<li><a href="#orgb88f450">1.2. Org Mode</a>
+<li><a href="#org63ca829">1.2. Org Mode</a>
 <ul>
-<li><a href="#org41ba4ad">1.2.1. 各种字体</a></li>
-<li><a href="#org0bb964b">1.2.2. org mode 文档转换输出</a></li>
+<li><a href="#orgb0eda23">1.2.1. 各种字体</a></li>
+<li><a href="#org261ccf5">1.2.2. org mode 文档转换输出</a></li>
 </ul>
 </li>
-<li><a href="#org9a65746">1.3. 修改.spacemacs的目录位置</a></li>
+<li><a href="#org29c5369">1.3. 修改.spacemacs的目录位置</a></li>
+<li><a href="#org764b56d">1.4. AG search</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<a id="org89ac8c8"></a>
+<a id="org820b3cd"></a>
 
 # spacemacs 学习笔记
 
 
-<a id="org4844bdc"></a>
+<a id="orgb56c5c1"></a>
 
 ## Dired Mode
 
 
-<a id="orgd83aeb6"></a>
+<a id="orgde01cde"></a>
 
 ### 退出命令
 
@@ -42,7 +43,7 @@
     C-x C-b     ;;查看所有buffer，选择进入
 
 
-<a id="orgf4792a0"></a>
+<a id="org51c08ec"></a>
 
 ### 进入文件修改模式
 
@@ -52,12 +53,12 @@
 -   或者 %R 来用正则表达式批量改名.
 
 
-<a id="orgb88f450"></a>
+<a id="org63ca829"></a>
 
 ## Org Mode
 
 
-<a id="org41ba4ad"></a>
+<a id="orgb0eda23"></a>
 
 ### 各种字体
 
@@ -74,7 +75,7 @@
     \\ 反双斜杠为换行
 
 
-<a id="org0bb964b"></a>
+<a id="org261ccf5"></a>
 
 ### org mode 文档转换输出
 
@@ -82,7 +83,7 @@
 2.  如未见看MarkDown选项,M-x, 然后输入:org-md-export-to-markdown.
 
 
-<a id="org9a65746"></a>
+<a id="org29c5369"></a>
 
 ## 修改.spacemacs的目录位置
 
@@ -91,4 +92,11 @@
     $ln -s src/spacemacs_alex  ~/.spacemacs
 
 src为存放configure文件夹，我将配置文件命名为：spacemacs<sub>alex</sub>.
+
+
+<a id="org764b56d"></a>
+
+## AG search
+
+"C-c k"打开AG ,输入 keyword 全工程搜索.
 
