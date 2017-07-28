@@ -40,3 +40,13 @@ $ln -s src/spacemacs_alex  ~/.spacemacs
 src为存放configure文件夹，我将配置文件命名为：spacemacs_alex.
 ** AG search 
 "C-c k"打开AG ,输入 keyword 全工程搜索.
+** default 字体setting 
+#+BEGIN_SRC emacs-lisp
+;; UTF8!
+  (set-language-environment 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (setq locale-coding-system 'utf-8)
+  (set-default-coding-systems 'utf-8)
+  (set-selection-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
+#+END_SRC

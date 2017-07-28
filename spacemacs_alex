@@ -31,7 +31,7 @@ values."
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
    '(
-     vimscript
+     octave
      ;; ----------------------------------------------------------------
      ;; Example of useful layers you may want to use right away.
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
@@ -42,6 +42,7 @@ values."
      ;; better-defaults
      emacs-lisp
      git
+     ;; magit
      markdown
      org
      ;; (shell :variables
@@ -139,8 +140,9 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Menlo"
-                               :size 17
+   ;; dotspacemacs-default-font '("Ubuntu Monospace"
+   dotspacemacs-default-font '("DejaVu Sans Mono"
+                               :size 19
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -383,6 +385,14 @@ you should place your code here."
 
   ;; 自动换行 org mode ;
   (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+
+  ;; uft-8
+  (set-language-environment 'utf-8)
+  (set-terminal-coding-system 'utf-8)
+  (set-default-coding-systems 'utf-8)
+  (setq locale-coding-system 'utf-8)
+  (set-selection-coding-system 'utf-8)
+  (prefer-coding-system 'utf-8)
 
   )
 
